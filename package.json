@@ -1,7 +1,7 @@
 {
   "name": "com.unityessentials.cameraluminancecalculator",
   "version": "1.0.0",
-  "displayName": "Unity Rendering Camera LuminanceCalculator",
+  "displayName": "Unity Rendering CameraLuminanceCalculator",
   "description": "This is a part of the UnityEssentials Ecosystem",
   "unity": "6000.0",
   "unityRelease": "",
