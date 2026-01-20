@@ -23,7 +23,7 @@ namespace UnityEssentials
         public void Awake()
         {
             _camera = GetComponent<Camera>();
-            _luminanceShader = ResourceLoader.LoadResource<ComputeShader>("UnityEssentials_Shader_CameraLuminance");
+            _luminanceShader = ResourceLoader.TryGet<ComputeShader>("UnityEssentials_Shader_CameraLuminance");
             _kernelHandle = _luminanceShader.FindKernel("CalculateLuminance");
             _resultBuffer = new ComputeBuffer(1, sizeof(uint));
             _luminanceShader.SetBuffer(_kernelHandle, "Result", _resultBuffer);
